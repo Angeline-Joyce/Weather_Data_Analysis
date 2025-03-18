@@ -21,7 +21,7 @@ This project performs **weather data analysis** using **NumPy**. It generates ra
 ✔ **Generates a Weather Report** summarizing findings.  
 
 
-
+```python
 import numpy as np
 temps = np.random.randint(20,41,30)
 print("\nTemperature:\n", temps)
@@ -69,7 +69,7 @@ print(f"- Day with Max Temp Increase: {max_increase_day}")
 print(f"- Day with Max Temp Drop: {max_decrease_day}")
 print(f"- Heatwave Days: {heatwave_days}")
 print(f"- Coldwave Days: {coldwave_days}")
-
+```python
 
 ## 📸 Sample Output  
 
