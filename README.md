@@ -1,5 +1,5 @@
 # 🌤️ Weather Data Analysis (Python, NumPy)
----
+
 ## 📌 Project Overview  
 This project performs **weather data analysis** using **NumPy**. It generates random daily temperatures, analyzes trends, and identifies key weather patterns like **heatwaves and cold waves**.  
 
