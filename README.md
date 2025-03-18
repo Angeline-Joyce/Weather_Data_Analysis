@@ -1,7 +1,5 @@
-# Weather_Data_Analysis
- Weather Data Analysis using Python and NumPy
 # 🌤️ Weather Data Analysis (Python, NumPy)
-
+---
 ## 📌 Project Overview  
 This project performs **weather data analysis** using **NumPy**. It generates random daily temperatures, analyzes trends, and identifies key weather patterns like **heatwaves and cold waves**.  
 
@@ -20,9 +18,12 @@ This project performs **weather data analysis** using **NumPy**. It generates ra
    - **Coldwave Days** (Temp < 25°C)  
 ✔ **Generates a Weather Report** summarizing findings.  
 
+---
 
 ```python
+
 import numpy as np
+import matplotlib.pyplot as plt
 temps = np.random.randint(20,41,30)
 print("\nTemperature:\n", temps)
 
@@ -69,6 +70,47 @@ print(f"- Day with Max Temp Increase: {max_increase_day}")
 print(f"- Day with Max Temp Drop: {max_decrease_day}")
 print(f"- Heatwave Days: {heatwave_days}")
 print(f"- Coldwave Days: {coldwave_days}")
+
+# Line Plot – Daily Temperature Trends
+days = np.arange(1, 31)  # Days from 1 to 30
+
+plt.figure(figsize=(10, 5))
+plt.plot(days, temps, marker='o', linestyle='-', color='b', label='Temperature')
+plt.axhline(y=Mean_temp, color='r', linestyle='--', label='Mean Temperature')
+
+plt.xlabel('Day')
+plt.ylabel('Temperature (°C)')
+plt.title('Daily Temperature Trends')
+plt.legend()
+plt.grid(True)
+
+# Save the figure
+plt.savefig("daily_temperature_trends.png", dpi=300, bbox_inches='tight')
+plt.show()
+
+# Bar Chart – Days Above & Below Mean Temperature
+plt.figure(figsize=(6, 4))
+plt.bar(['Above Mean', 'Below Mean'], [above_mean_count, below_mean_count], color=['green', 'red'])
+
+plt.xlabel('Temperature Category')
+plt.ylabel('Number of Days')
+plt.title('Days Above & Below Mean Temperature')
+
+# Save the figure
+plt.savefig("days_above_below_mean.png", dpi=300, bbox_inches='tight')
+plt.show()
+
+# Histogram – Temperature Distribution
+plt.figure(figsize=(6, 4))
+plt.hist(temps, bins=6, color='purple', edgecolor='black', alpha=0.7)
+
+plt.xlabel('Temperature (°C)')
+plt.ylabel('Frequency')
+plt.title('Temperature Distribution Over 30 Days')
+
+# Save the figure
+plt.savefig("temperature_distribution.png", dpi=300, bbox_inches='tight')
+plt.show()
 ```python
 
 ## 📸 Sample Output  
@@ -109,15 +151,21 @@ Coldwave Days: [ 1  2  3  7  8 10 11 13 15 17 23]
 - Heatwave Days: [ 4  6 18 21 25]
 - Coldwave Days: [ 1  2  3  7  8 10 11 13 15 17 23]
 
+## 📸 Sample Visualizations  
 
+### 🔹 Daily Temperature Trends  
+![Daily Temperature](daily_temperature_trends.png)  
 
+### 🔹 Days Above & Below Mean Temperature  
+![Above & Below Mean](days_above_below_mean.png)  
 
+### 🔹 Temperature Distribution  
+![Temperature Histogram](temperature_distribution.png)  
 
+---
+Conclusion
 
-
-
-
-
-
-
-
+1. I have identified fluctuations in daily temperature patterns.
+2. The analysis helps in understanding climate trends and weather conditions.
+3. Future improvements could include real-world weather data and machine learning models for temperature forecasting.
+---
