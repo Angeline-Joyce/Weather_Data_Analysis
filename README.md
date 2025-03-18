@@ -165,9 +165,9 @@ Coldwave Days: [ 1  2  3  7  8 10 11 13 15 17 23]
 
 
 ---
-Conclusion
+## CONCLUSION
 
-1. I have identified fluctuations in daily temperature patterns.
-2. The analysis helps in understanding climate trends and weather conditions.
-3. Future improvements could include real-world weather data and machine learning models for temperature forecasting.
+- 1. I have identified fluctuations in daily temperature patterns.
+- 2. The analysis helps in understanding climate trends and weather conditions.
+- 3. Future improvements could include real-world weather data and machine learning models for temperature forecasting.
 ---
