@@ -114,7 +114,7 @@ plt.show()
 ```python
 
 ## 📸 Sample Output  
-
+```python
 Temperature:
  [24 22 22 36 26 40 21 22 33 22 24 26 22 29 24 28 21 39 26 28 39 32 20 34
  37 29 33 30 26 29]
@@ -161,6 +161,8 @@ Coldwave Days: [ 1  2  3  7  8 10 11 13 15 17 23]
 
 ### 🔹 Temperature Distribution  
 ![Temperature Histogram](temperature_distribution.png)  
+```python
+
 
 ---
 Conclusion
