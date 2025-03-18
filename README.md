@@ -19,9 +19,9 @@ This project performs **weather data analysis** using **NumPy**. It generates ra
 ✔ **Generates a Weather Report** summarizing findings.  
 
 ## Conclusion
-- 1. I have identified fluctuations in daily temperature patterns.
-- 2. The analysis helps in understanding climate trends and weather conditions.
-- 3. Future improvements could include real-world weather data and machine learning models for temperature forecasting.
+-  I have identified fluctuations in daily temperature patterns.
+-  The analysis helps in understanding climate trends and weather conditions.
+-  Future improvements could include real-world weather data and machine learning models for temperature forecasting.
 
 ---
 
